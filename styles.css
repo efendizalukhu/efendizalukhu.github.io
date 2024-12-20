@@ -1,0 +1,217 @@
+/* Reset dan Dasar Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #18a2ff, #3edbf0);
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(90deg, #3828c5, #5936d9);
+  color: rgb(255, 255, 255);
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section */
+.hero {
+  background: url('gambar\ banner.webp') no-repeat center center/cover;
+  color: #00ccff;
+  text-align: center;
+  padding: 100px 20px;
+  text-shadow: 2px 4px 8px rgb(17, 0, 255);
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+.hero .cta-button {
+  background: linear-gradient(90deg, #e74c3c, #ff5733);
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.hero .cta-button:hover {
+  background: linear-gradient(90deg, #c0392b, #d35400);
+  transform: scale(1.1);
+}
+
+/* Info Produk Section */
+.info-products {
+  background: linear-gradient(to right, #0099ff, #34df2e);
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+.info-products h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.info-products p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Produk Section */
+.products {
+  background: #f8f9fa;
+  padding: 50px 20px;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #00eeff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: rgb(94, 255, 0);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgb(255, 0, 200);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  font-size: 1.6em;
+  color: #3700ff;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 1.2em;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.product-card .cta-button {
+  background: linear-gradient(90deg, #0080ff, #ff00d4);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgb(255, 255, 255);
+}
+
+/* Section Email */
+.email {
+  background: linear-gradient(to right, #0400ff, #5eff00);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.email h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.email input {
+  padding: 12px;
+  font-size: 1.1em;
+  margin-right: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.email button {
+  padding: 12px 25px;
+  background: #fffb00;
+  color: rgb(0, 26, 255);
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+}
+
+.email button:hover {
+  background: #00ff73;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #0004ff;
+  color: rgb(0, 153, 255);
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1.2em;
+}
